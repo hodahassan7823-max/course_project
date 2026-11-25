@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Course Details</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- Page card (white box in the middle) -->
+        <!-- Top bar (same on every page) -->
+        <div class="topbar">
+            <span class="brand">🎓 Course Registration</span>
+            <span class="menu">
+                <a href="student-dashboard.html">🏠 Dashboard</a>
+                <a href="course-list.html" class="active">📖 Courses</a>
+                <a href="my-schedule.html">📅 My Schedule</a>
+            </span>
+            <span class="user">👤 Hello, <span class="user-name">Student</span></span>
+        </div>
+
+        <table class="outer">
+            <tr>
+                <td class="page">
+                    <div class="course" id="CS230">
+
+                        <h2>CS230 - Web Programming</h2>
+
+                        <!-- General Information -->
+                        <h3>General Information</h3>
+                        <table class="info">
+                            <tr>
+                                <td class="label">Course Code</td>
+                                <td>CS230</td>
+                                <td class="label">Course Name</td>
+                                <td>Web Programming</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Department</td>
+                                <td>Computer Science</td>
+                                <td class="label">Level</td>
+                                <td>Level 3</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Credit Hours</td>
+                                <td>3 (2 lecture + 1 lab)</td>
+                                <td class="label">Semester</td>
+                                <td>Fall 2026</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Instructor</td>
+                                <td>Dr. Mona Adel</td>
+                                <td class="label">Instructor Email</td>
+                                <td>mona.adel@university.edu</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Days and Time</td>
+                                <td>Mon/Wed 10:30 - 12:00</td>
+                                <td class="label">Room</td>
+                                <td>Building A - Hall 110</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Lab</td>
+                                <td>Sun 14:00 - 16:00 - Lab 2</td>
+                                <td class="label">Language</td>
+                                <td>English</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Prerequisite</td>
+                                <td>CS101 Introduction to Programming</td>
+                                <td class="label">Course Type</td>
+                                <td>Elective</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Start Date</td>
+                                <td>20 Sep 2026</td>
+                                <td class="label">Registration Deadline</td>
+                                <td>30 Nov 2026</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Final Exam</td>
+                                <td>12 Jan 2027 - 10:00</td>
+                                <td class="label">Midterm Exam</td>
+                                <td>Week 8</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Description</td>
+                                <td colspan="3">
+                                    Introduces building websites with HTML, CSS and the basics of server-side programming.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Main Topics</td>
+                                <td colspan="3">
+                                    HTML structure, CSS styling, forms, responsive pages, introduction to web servers, web security basics.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Grading</td>
+                                <td colspan="3">Midterm 20% | Lab 20% | Project 20% | Final Exam 40%</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Textbook</td>
+                                <td colspan="3">
+                                    Web Development and Design Foundations, Terry Felke-Morris.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Attendance Policy</td>
+                                <td colspan="3">
+                                    A student who is absent for more than 25% of lectures is not allowed to sit the final exam.
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Course Capacity -->
+                        <h3>Course Capacity</h3>
+                        <table class="info">
+                            <tr>
+                                <td class="label">Total Capacity</td>
+                                <td>35 seats</td>
+                                <td class="label">Enrolled</td>
+                                <td>20 students</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Available Seats</td>
+                                <td class="good">15 seats</td>
+                                <td class="label">Waitlist</td>
+                                <td>0 students (maximum 10)</td>
+                            </tr>
+                        </table>
+
+                        <!-- Registration Checks -->
+                        <h3>Registration Checks</h3>
+                        <table>
+                            <tr>
+                                <th>Check</th>
+                                <th>Rule</th>
+                                <th>Result</th>
+                            </tr>
+                            <tr>
+                                <td>Prerequisite Validation</td>
+                                <td>Prerequisite must be completed</td>
+                                <td class="good">Passed - CS101 completed (grade A-)</td>
+                            </tr>
+                            <tr>
+                                <td>Schedule Conflict Validation</td>
+                                <td>No overlap with registered courses</td>
+                                <td class="bad">Failed - conflict with MATH201 (Mon/Wed 10:30 - 12:00)</td>
+                            </tr>
+                            <tr>
+                                <td>Credit Hours Limit Check</td>
+                                <td>Total must not exceed 18 hours</td>
+                                <td class="good">Passed - 8 + 3 = 11 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Course Capacity</td>
+                                <td>At least 1 free seat</td>
+                                <td class="good">Passed - 15 free seats</td>
+                            </tr>
+                        </table>
+
+                        <!-- Register or Join the Waitlist -->
+                        <h3>Register or Join the Waitlist</h3>
+                        <form action="my-schedule.html" method="get">
+                            <table class="info">
+                                <tr>
+                                    <td class="label">Course</td>
+                                    <td>CS230 - Web Programming</td>
+                                </tr>
+                                <tr>
+                                    <td class="plain" colspan="2">
+                                        <button type="submit" disabled>Register for Course</button>
+                                        &nbsp;
+                                        <a href="course-list.html">Back to Course List</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <div class="course" id="CS301">
+
+                        <h2>CS301 - Database Systems</h2>
+
+                        <!-- General Information -->
+                        <h3>General Information</h3>
+                        <table class="info">
+                            <tr>
+                                <td class="label">Course Code</td>
+                                <td>CS301</td>
+                                <td class="label">Course Name</td>
+                                <td>Database Systems</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Department</td>
+                                <td>Computer Science</td>
+                                <td class="label">Level</td>
+                                <td>Level 3</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Credit Hours</td>
+                                <td>3 (2 lecture + 1 lab)</td>
+                                <td class="label">Semester</td>
+                                <td>Fall 2026</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Instructor</td>
+                                <td>Dr. Sameh Fathy</td>
+                                <td class="label">Instructor Email</td>
+                                <td>sameh.fathy@university.edu</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Days and Time</td>
+                                <td>Sun/Tue 12:00 - 13:30</td>
+                                <td class="label">Room</td>
+                                <td>Building B - Hall 204</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Lab</td>
+                                <td>Thu 10:00 - 12:00 - Lab 3</td>
+                                <td class="label">Language</td>
+                                <td>English</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Prerequisite</td>
+                                <td>CS201 Data Structures</td>
+                                <td class="label">Course Type</td>
+                                <td>Compulsory</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Start Date</td>
+                                <td>20 Sep 2026</td>
+                                <td class="label">Registration Deadline</td>
+                                <td>30 Nov 2026</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Final Exam</td>
+                                <td>10 Jan 2027 - 10:00</td>
+                                <td class="label">Midterm Exam</td>
+                                <td>Week 8</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Description</td>
+                                <td colspan="3">
+                                    Introduces the design and use of database systems: the relational model, SQL, normalization, transactions, and basic database administration.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Main Topics</td>
+                                <td colspan="3">
+                                    ER diagrams, relational model, SQL queries, normalization, indexing, transactions, backup and security.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Grading</td>
+                                <td colspan="3">
+                                    Midterm 20% | Lab and Assignments 20% | Project 10% | Final Exam 50%
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Textbook</td>
+                                <td colspan="3">Database System Concepts, Silberschatz, Korth, Sudarshan.</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Attendance Policy</td>
+                                <td colspan="3">
+                                    A student who is absent for more than 25% of lectures is not allowed to sit the final exam.
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Course Capacity -->
+                        <h3>Course Capacity</h3>
+                        <table class="info">
+                            <tr>
+                                <td class="label">Total Capacity</td>
+                                <td>30 seats</td>
+                                <td class="label">Enrolled</td>
+                                <td>30 students</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Available Seats</td>
+                                <td class="bad">0 seats</td>
+                                <td class="label">Waitlist</td>
+                                <td>4 students (maximum 10)</td>
+                            </tr>
+                        </table>
+
+                        <!-- Registration Checks -->
+                        <h3>Registration Checks</h3>
+                        <table>
+                            <tr>
+                                <th>Check</th>
+                                <th>Rule</th>
+                                <th>Result</th>
+                            </tr>
+                            <tr>
+                                <td>Prerequisite Validation</td>
+                                <td>Prerequisite must be completed</td>
+                                <td class="good">Passed - CS201 completed (grade B+)</td>
+                            </tr>
+                            <tr>
+                                <td>Schedule Conflict Validation</td>
+                                <td>No overlap with registered courses</td>
+                                <td class="good">Passed - no conflict with MATH201, IS210, ENG101</td>
+                            </tr>
+                            <tr>
+                                <td>Credit Hours Limit Check</td>
+                                <td>Total must not exceed 18 hours</td>
+                                <td class="good">Passed - 8 + 3 = 11 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Course Capacity</td>
+                                <td>At least 1 free seat</td>
+                                <td class="bad">Failed - course is full, waitlist available</td>
+                            </tr>
+                        </table>
+
+                        <!-- Register or Join the Waitlist -->
+                        <h3>Register or Join the Waitlist</h3>
+                        <form action="my-schedule.html" method="get">
+                            <table class="info">
+                                <tr>
+                                    <td class="label">Course</td>
+                                    <td>CS301 - Database Systems</td>
+                                </tr>
+                                <tr>
+                                    <td class="plain" colspan="2">
+                                        <button type="submit">Join Waitlist</button>
+                                        &nbsp;
+                                        <a href="course-list.html">Back to Course List</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <div class="course" id="CS401">
+
+                        <h2>CS401 - Software Engineering</h2>
+
+                        <!-- General Information -->
+                        <h3>General Information</h3>
+                        <table class="info">
+                            <tr>
+                                <td class="label">Course Code</td>
+                                <td>CS401</td>
+                                <td class="label">Course Name</td>
+                                <td>Software Engineering</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Department</td>
+                                <td>Computer Science</td>
+                                <td class="label">Level</td>
+                                <td>Level 4</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Credit Hours</td>
+                                <td>3 (3 lecture)</td>
+                                <td class="label">Semester</td>
+                                <td>Fall 2026</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Instructor</td>
+                                <td>Dr. Hala Samir</td>
+                                <td class="label">Instructor Email</td>
+                                <td>hala.samir@university.edu</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Days and Time</td>
+                                <td>Thu 13:00 - 16:00</td>
+                                <td class="label">Room</td>
+                                <td>Building B - Hall 301</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Lab</td>
+                                <td>None</td>
+                                <td class="label">Language</td>
+                                <td>English</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Prerequisite</td>
+                                <td>CS201 Data Structures</td>
+                                <td class="label">Course Type</td>
+                                <td>Compulsory</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Start Date</td>
+                                <td>20 Sep 2026</td>
+                                <td class="label">Registration Deadline</td>
+                                <td>30 Nov 2026</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Final Exam</td>
+                                <td>14 Jan 2027 - 12:00</td>
+                                <td class="label">Midterm Exam</td>
+                                <td>Week 9</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Description</td>
+                                <td colspan="3">
+                                    Covers the software development life cycle, requirements, design, testing, and teamwork on a real project.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Main Topics</td>
+                                <td colspan="3">
+                                    Process models, requirements, UML, design patterns, testing, version control, project management.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Grading</td>
+                                <td colspan="3">Midterm 25% | Team Project 25% | Final Exam 50%</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Textbook</td>
+                                <td colspan="3">Software Engineering, Ian Sommerville.</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Attendance Policy</td>
+                                <td colspan="3">
+                                    A student who is absent for more than 25% of lectures is not allowed to sit the final exam.
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Course Capacity -->
+                        <h3>Course Capacity</h3>
+                        <table class="info">
+                            <tr>
+                                <td class="label">Total Capacity</td>
+                                <td>35 seats</td>
+                                <td class="label">Enrolled</td>
+                                <td>22 students</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Available Seats</td>
+                                <td class="good">13 seats</td>
+                                <td class="label">Waitlist</td>
+                                <td>0 students (maximum 10)</td>
+                            </tr>
+                        </table>
+
+                        <!-- Registration Checks -->
+                        <h3>Registration Checks</h3>
+                        <table>
+                            <tr>
+                                <th>Check</th>
+                                <th>Rule</th>
+                                <th>Result</th>
+                            </tr>
+                            <tr>
+                                <td>Prerequisite Validation</td>
+                                <td>Prerequisite must be completed</td>
+                                <td class="good">Passed - CS201 completed (grade B+)</td>
+                            </tr>
+                            <tr>
+                                <td>Schedule Conflict Validation</td>
+                                <td>No overlap with registered courses</td>
+                                <td class="good">Passed - no conflict with MATH201, IS210, ENG101</td>
+                            </tr>
+                            <tr>
+                                <td>Credit Hours Limit Check</td>
+                                <td>Total must not exceed 18 hours</td>
+                                <td class="good">Passed - 8 + 3 = 11 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Course Capacity</td>
+                                <td>At least 1 free seat</td>
+                                <td class="good">Passed - 13 free seats</td>
+                            </tr>
+                        </table>
+
+                        <!-- Register or Join the Waitlist -->
+                        <h3>Register or Join the Waitlist</h3>
+                        <form action="my-schedule.html" method="get">
+                            <table class="info">
+                                <tr>
+                                    <td class="label">Course</td>
+                                    <td>CS401 - Software Engineering</td>
+                                </tr>
+                                <tr>
+                                    <td class="plain" colspan="2">
+                                        <button type="submit">Register for Course</button>
+                                        &nbsp;
+                                        <a href="course-list.html">Back to Course List</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <div class="course" id="MATH201">
+
+                        <h2>MATH201 - Discrete Mathematics</h2>
+
+                        <!-- General Information -->
+                        <h3>General Information</h3>
+                        <table class="info">
+                            <tr>
+                                <td class="label">Course Code</td>
+                                <td>MATH201</td>
+                                <td class="label">Course Name</td>
+                                <td>Discrete Mathematics</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Department</td>
+                                <td>Mathematics</td>
+                                <td class="label">Level</td>
+                                <td>Level 2</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Credit Hours</td>
+                                <td>3 (3 lecture)</td>
+                                <td class="label">Semester</td>
+                                <td>Fall 2026</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Instructor</td>
+                                <td>Dr. Karim Nabil</td>
+                                <td class="label">Instructor Email</td>
+                                <td>karim.nabil@university.edu</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Days and Time</td>
+                                <td>Mon/Wed 10:30 - 12:00</td>
+                                <td class="label">Room</td>
+                                <td>Building A - Hall 105</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Lab</td>
+                                <td>None</td>
+                                <td class="label">Language</td>
+                                <td>English</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Prerequisite</td>
+                                <td>MATH101 Calculus I</td>
+                                <td class="label">Course Type</td>
+                                <td>Compulsory</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Start Date</td>
+                                <td>20 Sep 2026</td>
+                                <td class="label">Registration Deadline</td>
+                                <td>30 Nov 2026</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Final Exam</td>
+                                <td>9 Jan 2027 - 09:00</td>
+                                <td class="label">Midterm Exam</td>
+                                <td>Week 7</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Description</td>
+                                <td colspan="3">
+                                    Covers logic, sets, relations, functions, counting, graphs and proof techniques used in computer science.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Main Topics</td>
+                                <td colspan="3">
+                                    Propositional logic, sets, relations, functions, induction, combinatorics, graph theory.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Grading</td>
+                                <td colspan="3">Midterm 30% | Quizzes 10% | Final Exam 60%</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Textbook</td>
+                                <td colspan="3">Discrete Mathematics and Its Applications, Kenneth Rosen.</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Attendance Policy</td>
+                                <td colspan="3">
+                                    A student who is absent for more than 25% of lectures is not allowed to sit the final exam.
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Course Capacity -->
+                        <h3>Course Capacity</h3>
+                        <table class="info">
+                            <tr>
+                                <td class="label">Total Capacity</td>
+                                <td>40 seats</td>
+                                <td class="label">Enrolled</td>
+                                <td>30 students</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Available Seats</td>
+                                <td class="good">10 seats</td>
+                                <td class="label">Waitlist</td>
+                                <td>0 students (maximum 10)</td>
+                            </tr>
+                        </table>
+
+                        <!-- Registration Checks -->
+                        <h3>Registration Checks</h3>
+                        <table>
+                            <tr>
+                                <th>Check</th>
+                                <th>Rule</th>
+                                <th>Result</th>
+                            </tr>
+                            <tr>
+                                <td>Prerequisite Validation</td>
+                                <td>Prerequisite must be completed</td>
+                                <td class="good">Passed - MATH101 completed</td>
+                            </tr>
+                            <tr>
+                                <td>Schedule Conflict Validation</td>
+                                <td>No overlap with registered courses</td>
+                                <td class="good">No conflict</td>
+                            </tr>
+                            <tr>
+                                <td>Credit Hours Limit Check</td>
+                                <td>Total must not exceed 18 hours</td>
+                                <td class="good">Included in the 8 registered hours</td>
+                            </tr>
+                            <tr>
+                                <td>Course Capacity</td>
+                                <td>At least 1 free seat</td>
+                                <td class="good">Passed - 10 free seats</td>
+                            </tr>
+                        </table>
+
+                        <!-- Register or Join the Waitlist -->
+                        <h3>Register or Join the Waitlist</h3>
+                        <form action="my-schedule.html" method="get">
+                            <table class="info">
+                                <tr>
+                                    <td class="label">Course</td>
+                                    <td>MATH201 - Discrete Mathematics</td>
+                                </tr>
+                                <tr>
+                                    <td class="plain" colspan="2">
+                                        <a href="my-schedule.html">Go to My Schedule to drop</a>
+                                        &nbsp;
+                                        <a href="course-list.html">Back to Course List</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <div class="course" id="IS210">
+
+                        <h2>IS210 - Systems Analysis and Design</h2>
+
+                        <!-- General Information -->
+                        <h3>General Information</h3>
+                        <table class="info">
+                            <tr>
+                                <td class="label">Course Code</td>
+                                <td>IS210</td>
+                                <td class="label">Course Name</td>
+                                <td>Systems Analysis and Design</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Department</td>
+                                <td>Information Systems</td>
+                                <td class="label">Level</td>
+                                <td>Level 2</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Credit Hours</td>
+                                <td>3 (3 lecture)</td>
+                                <td class="label">Semester</td>
+                                <td>Fall 2026</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Instructor</td>
+                                <td>Dr. Laila Yassin</td>
+                                <td class="label">Instructor Email</td>
+                                <td>laila.yassin@university.edu</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Days and Time</td>
+                                <td>Thu 09:00 - 12:00</td>
+                                <td class="label">Room</td>
+                                <td>Building C - Hall 301</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Lab</td>
+                                <td>None</td>
+                                <td class="label">Language</td>
+                                <td>English</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Prerequisite</td>
+                                <td>None</td>
+                                <td class="label">Course Type</td>
+                                <td>Compulsory</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Start Date</td>
+                                <td>20 Sep 2026</td>
+                                <td class="label">Registration Deadline</td>
+                                <td>30 Nov 2026</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Final Exam</td>
+                                <td>11 Jan 2027 - 10:00</td>
+                                <td class="label">Midterm Exam</td>
+                                <td>Week 8</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Description</td>
+                                <td colspan="3">
+                                    Teaches how to analyze business needs and design information systems using requirements, models and diagrams.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Main Topics</td>
+                                <td colspan="3">
+                                    System development life cycle, requirements gathering, use cases, class diagrams, process modeling, system design.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Grading</td>
+                                <td colspan="3">
+                                    Midterm 20% | Assignments 20% | Group Project 20% | Final Exam 40%
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Textbook</td>
+                                <td colspan="3">Systems Analysis and Design, Kendall and Kendall.</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Attendance Policy</td>
+                                <td colspan="3">
+                                    A student who is absent for more than 25% of lectures is not allowed to sit the final exam.
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Course Capacity -->
+                        <h3>Course Capacity</h3>
+                        <table class="info">
+                            <tr>
+                                <td class="label">Total Capacity</td>
+                                <td>40 seats</td>
+                                <td class="label">Enrolled</td>
+                                <td>25 students</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Available Seats</td>
+                                <td class="good">15 seats</td>
+                                <td class="label">Waitlist</td>
+                                <td>0 students (maximum 10)</td>
+                            </tr>
+                        </table>
+
+                        <!-- Registration Checks -->
+                        <h3>Registration Checks</h3>
+                        <table>
+                            <tr>
+                                <th>Check</th>
+                                <th>Rule</th>
+                                <th>Result</th>
+                            </tr>
+                            <tr>
+                                <td>Prerequisite Validation</td>
+                                <td>Prerequisite must be completed</td>
+                                <td class="good">No prerequisite</td>
+                            </tr>
+                            <tr>
+                                <td>Schedule Conflict Validation</td>
+                                <td>No overlap with registered courses</td>
+                                <td class="good">No conflict</td>
+                            </tr>
+                            <tr>
+                                <td>Credit Hours Limit Check</td>
+                                <td>Total must not exceed 18 hours</td>
+                                <td class="good">Included in the 8 registered hours</td>
+                            </tr>
+                            <tr>
+                                <td>Course Capacity</td>
+                                <td>At least 1 free seat</td>
+                                <td class="good">Passed - 15 free seats</td>
+                            </tr>
+                        </table>
+
+                        <!-- Register or Join the Waitlist -->
+                        <h3>Register or Join the Waitlist</h3>
+                        <form action="my-schedule.html" method="get">
+                            <table class="info">
+                                <tr>
+                                    <td class="label">Course</td>
+                                    <td>IS210 - Systems Analysis and Design</td>
+                                </tr>
+                                <tr>
+                                    <td class="plain" colspan="2">
+                                        <a href="my-schedule.html">Go to My Schedule to drop</a>
+                                        &nbsp;
+                                        <a href="course-list.html">Back to Course List</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <div class="course" id="ENG101">
+
+                        <h2>ENG101 - English Writing</h2>
+
+                        <!-- General Information -->
+                        <h3>General Information</h3>
+                        <table class="info">
+                            <tr>
+                                <td class="label">Course Code</td>
+                                <td>ENG101</td>
+                                <td class="label">Course Name</td>
+                                <td>English Writing</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Department</td>
+                                <td>Languages</td>
+                                <td class="label">Level</td>
+                                <td>Level 1</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Credit Hours</td>
+                                <td>2 (2 lecture)</td>
+                                <td class="label">Semester</td>
+                                <td>Fall 2026</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Instructor</td>
+                                <td>Ms. Nadia Fouad</td>
+                                <td class="label">Instructor Email</td>
+                                <td>nadia.fouad@university.edu</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Days and Time</td>
+                                <td>Wed 13:00 - 15:00</td>
+                                <td class="label">Room</td>
+                                <td>Building D - Hall 012</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Lab</td>
+                                <td>None</td>
+                                <td class="label">Language</td>
+                                <td>English</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Prerequisite</td>
+                                <td>None</td>
+                                <td class="label">Course Type</td>
+                                <td>University Requirement</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Start Date</td>
+                                <td>20 Sep 2026</td>
+                                <td class="label">Registration Deadline</td>
+                                <td>30 Nov 2026</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Final Exam</td>
+                                <td>13 Jan 2027 - 10:00</td>
+                                <td class="label">Midterm Exam</td>
+                                <td>Week 8</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Description</td>
+                                <td colspan="3">
+                                    Develops academic and technical writing skills: reports, emails, summaries and presentations.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Main Topics</td>
+                                <td colspan="3">
+                                    Paragraph writing, technical reports, emails, summarizing, citation, presentation skills.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Grading</td>
+                                <td colspan="3">Writing Tasks 40% | Midterm 20% | Final Exam 40%</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Textbook</td>
+                                <td colspan="3">Writing for Computer Science, Justin Zobel.</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Attendance Policy</td>
+                                <td colspan="3">
+                                    A student who is absent for more than 25% of lectures is not allowed to sit the final exam.
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Course Capacity -->
+                        <h3>Course Capacity</h3>
+                        <table class="info">
+                            <tr>
+                                <td class="label">Total Capacity</td>
+                                <td>50 seats</td>
+                                <td class="label">Enrolled</td>
+                                <td>20 students</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Available Seats</td>
+                                <td class="good">30 seats</td>
+                                <td class="label">Waitlist</td>
+                                <td>0 students (maximum 10)</td>
+                            </tr>
+                        </table>
+
+                        <!-- Registration Checks -->
+                        <h3>Registration Checks</h3>
+                        <table>
+                            <tr>
+                                <th>Check</th>
+                                <th>Rule</th>
+                                <th>Result</th>
+                            </tr>
+                            <tr>
+                                <td>Prerequisite Validation</td>
+                                <td>Prerequisite must be completed</td>
+                                <td class="good">No prerequisite</td>
+                            </tr>
+                            <tr>
+                                <td>Schedule Conflict Validation</td>
+                                <td>No overlap with registered courses</td>
+                                <td class="good">No conflict</td>
+                            </tr>
+                            <tr>
+                                <td>Credit Hours Limit Check</td>
+                                <td>Total must not exceed 18 hours</td>
+                                <td class="good">Included in the 8 registered hours</td>
+                            </tr>
+                            <tr>
+                                <td>Course Capacity</td>
+                                <td>At least 1 free seat</td>
+                                <td class="good">Passed - 30 free seats</td>
+                            </tr>
+                        </table>
+
+                        <!-- Register or Join the Waitlist -->
+                        <h3>Register or Join the Waitlist</h3>
+                        <form action="my-schedule.html" method="get">
+                            <table class="info">
+                                <tr>
+                                    <td class="label">Course</td>
+                                    <td>ENG101 - English Writing</td>
+                                </tr>
+                                <tr>
+                                    <td class="plain" colspan="2">
+                                        <a href="my-schedule.html">Go to My Schedule to drop</a>
+                                        &nbsp;
+                                        <a href="course-list.html">Back to Course List</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <div class="course" id="CS101">
+
+                        <h2>CS101 - Introduction to Programming</h2>
+
+                        <!-- General Information -->
+                        <h3>General Information</h3>
+                        <table class="info">
+                            <tr>
+                                <td class="label">Course Code</td>
+                                <td>CS101</td>
+                                <td class="label">Course Name</td>
+                                <td>Introduction to Programming</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Department</td>
+                                <td>Computer Science</td>
+                                <td class="label">Level</td>
+                                <td>Level 1</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Credit Hours</td>
+                                <td>3 (2 lecture + 1 lab)</td>
+                                <td class="label">Semester</td>
+                                <td>Fall 2026</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Instructor</td>
+                                <td>Dr. Omar Tarek</td>
+                                <td class="label">Instructor Email</td>
+                                <td>omar.tarek@university.edu</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Days and Time</td>
+                                <td>Sun/Tue 09:00 - 10:30</td>
+                                <td class="label">Room</td>
+                                <td>Building B - Hall 101</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Lab</td>
+                                <td>Thu 12:00 - 14:00 - Lab 1</td>
+                                <td class="label">Language</td>
+                                <td>English</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Prerequisite</td>
+                                <td>None</td>
+                                <td class="label">Course Type</td>
+                                <td>Compulsory</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Start Date</td>
+                                <td>20 Sep 2026</td>
+                                <td class="label">Registration Deadline</td>
+                                <td>30 Nov 2026</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Final Exam</td>
+                                <td>8 Jan 2027 - 10:00</td>
+                                <td class="label">Midterm Exam</td>
+                                <td>Week 8</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Description</td>
+                                <td colspan="3">
+                                    Introduces programming concepts and problem solving using a simple programming language.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Main Topics</td>
+                                <td colspan="3">
+                                    Variables, conditions, loops, functions, arrays, basic problem solving and debugging.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Grading</td>
+                                <td colspan="3">Midterm 20% | Lab 20% | Assignments 10% | Final Exam 50%</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Textbook</td>
+                                <td colspan="3">
+                                    Starting Out with Programming Logic and Design, Tony Gaddis.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Attendance Policy</td>
+                                <td colspan="3">
+                                    A student who is absent for more than 25% of lectures is not allowed to sit the final exam.
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Course Capacity -->
+                        <h3>Course Capacity</h3>
+                        <table class="info">
+                            <tr>
+                                <td class="label">Total Capacity</td>
+                                <td>40 seats</td>
+                                <td class="label">Enrolled</td>
+                                <td>35 students</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Available Seats</td>
+                                <td class="good">5 seats</td>
+                                <td class="label">Waitlist</td>
+                                <td>0 students (maximum 10)</td>
+                            </tr>
+                        </table>
+
+                        <!-- Registration Checks -->
+                        <h3>Registration Checks</h3>
+                        <table>
+                            <tr>
+                                <th>Check</th>
+                                <th>Rule</th>
+                                <th>Result</th>
+                            </tr>
+                            <tr>
+                                <td>Prerequisite Validation</td>
+                                <td>Prerequisite must be completed</td>
+                                <td class="good">No prerequisite</td>
+                            </tr>
+                            <tr>
+                                <td>Schedule Conflict Validation</td>
+                                <td>No overlap with registered courses</td>
+                                <td class="good">Not needed</td>
+                            </tr>
+                            <tr>
+                                <td>Credit Hours Limit Check</td>
+                                <td>Total must not exceed 18 hours</td>
+                                <td class="good">Not needed</td>
+                            </tr>
+                            <tr>
+                                <td>Course Capacity</td>
+                                <td>At least 1 free seat</td>
+                                <td class="good">Passed - 5 free seats</td>
+                            </tr>
+                        </table>
+
+                        <!-- Register or Join the Waitlist -->
+                        <h3>Register or Join the Waitlist</h3>
+                        <form action="my-schedule.html" method="get">
+                            <table class="info">
+                                <tr>
+                                    <td class="label">Course</td>
+                                    <td>CS101 - Introduction to Programming</td>
+                                </tr>
+                                <tr>
+                                    <td class="plain" colspan="2">
+                                        &nbsp;
+                                        <a href="course-list.html">Back to Course List</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    <script src="script.js"></script>
+    </body>
+</html>

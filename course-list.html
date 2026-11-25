@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Course List</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- Page card (white box in the middle) -->
+        <!-- Top bar (same on every page) -->
+        <div class="topbar">
+            <span class="brand">🎓 Course Registration</span>
+            <span class="menu">
+                <a href="student-dashboard.html">🏠 Dashboard</a>
+                <a href="course-list.html" class="active">📖 Courses</a>
+                <a href="my-schedule.html">📅 My Schedule</a>
+            </span>
+            <span class="user">👤 Hello, <span class="user-name">Student</span></span>
+        </div>
+
+        <table class="outer">
+            <tr>
+                <td class="page">
+
+                    <h2>Course List</h2>
+
+                    <!-- Search and Filter Courses -->
+                    <h3>Search and Filter Courses</h3>
+                    <form id="filterForm" action="course-list.html" method="get">
+                        <table class="info">
+                            <tr>
+                                <td class="label">Search</td>
+                                <td><input type="text" name="q" placeholder="Course name or code"></td>
+                                <td class="label">Department</td>
+                                <td>
+                                    <select name="dept">
+                                        <option>All</option>
+                                        <option>Computer Science</option>
+                                        <option>Information Systems</option>
+                                        <option>Mathematics</option>
+                                        <option>Languages</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Credit Hours</td>
+                                <td>
+                                    <select name="cr">
+                                        <option>All</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </td>
+                                <td class="label">Availability</td>
+                                <td>
+                                    <select name="av">
+                                        <option>All</option>
+                                        <option>Available seats</option>
+                                        <option>Full</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="plain" colspan="4">
+                                    <button type="submit">Search</button>
+                                    <button type="reset">Clear</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+
+                    <!-- Browse Available Courses -->
+                    <h3>Browse Available Courses</h3>
+                    <table id="courseTable">
+                        <tr>
+                            <th>Code</th>
+                            <th>Course Name</th>
+                            <th>Seats Left</th>
+                            <th>Price</th>
+                            <th>Details</th>
+                        </tr>
+                        <tr data-dept="Computer Science" data-cr="3">
+                            <td>CS230</td>
+                            <td>Web Programming</td>
+                            <td>15 of 35</td>
+                            <td>3000 EGP <button type="button">Pay</button></td>
+                            <td><a href="course-details.html#CS230">View</a></td>
+                        </tr>
+                        <tr data-dept="Computer Science" data-cr="3">
+                            <td>CS301</td>
+                            <td>Database Systems</td>
+                            <td>0 of 30</td>
+                            <td>3000 EGP <button type="button">Pay</button></td>
+                            <td><a href="course-details.html#CS301">View</a></td>
+                        </tr>
+                        <tr data-dept="Computer Science" data-cr="3">
+                            <td>CS401</td>
+                            <td>Software Engineering</td>
+                            <td>13 of 35</td>
+                            <td>3000 EGP <button type="button">Pay</button></td>
+                            <td><a href="course-details.html#CS401">View</a></td>
+                        </tr>
+                        <tr data-dept="Mathematics" data-cr="3">
+                            <td>MATH201</td>
+                            <td>Discrete Mathematics</td>
+                            <td>10 of 40</td>
+                            <td>3000 EGP <button type="button">Pay</button></td>
+                            <td><a href="course-details.html#MATH201">View</a></td>
+                        </tr>
+                        <tr data-dept="Information Systems" data-cr="3">
+                            <td>IS210</td>
+                            <td>Systems Analysis and Design</td>
+                            <td>15 of 40</td>
+                            <td>3000 EGP <button type="button">Pay</button></td>
+                            <td><a href="course-details.html#IS210">View</a></td>
+                        </tr>
+                        <tr data-dept="Languages" data-cr="2">
+                            <td>ENG101</td>
+                            <td>English Writing</td>
+                            <td>30 of 50</td>
+                            <td>2000 EGP <button type="button">Pay</button></td>
+                            <td><a href="course-details.html#ENG101">View</a></td>
+                        </tr>
+                        <tr data-dept="Computer Science" data-cr="3">
+                            <td>CS101</td>
+                            <td>Introduction to Programming</td>
+                            <td>5 of 40</td>
+                            <td>3000 EGP <button type="button">Pay</button></td>
+                            <td><a href="course-details.html#CS101">View</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <script src="script.js"></script>
+    </body>
+</html>

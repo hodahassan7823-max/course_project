@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Student Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- Top bar (same on every page) -->
+        <div class="topbar">
+            <span class="brand">🎓 Course Registration</span>
+            <span class="menu">
+                <a href="student-dashboard.html" class="active">🏠 Dashboard</a>
+                <a href="course-list.html">📖 Courses</a>
+                <a href="my-schedule.html">📅 My Schedule</a>
+            </span>
+            <span class="user">👤 Hello, <span class="user-name">Student</span></span>
+        </div>
+
+        <div class="dash">
+
+            <!-- Left side -->
+            <div class="main">
+
+                <!-- Welcome -->
+                <div class="panel welcome">
+                    <span class="big-icon">🎓</span>
+                    <div>
+                        <h1>Welcome back, <span class="user-name">Student</span>! 💜</h1>
+                        <p>Here's an overview of your course registration.</p>
+                    </div>
+                </div>
+
+                <!-- Credit Hours -->
+                <div class="panel">
+                    <h2>📊 Credit Hours</h2>
+                    <div class="cards">
+                        <div class="box blue"><span>📖</span><b>8 hours</b>Registered Credits</div>
+                        <div class="box purple"><span>🏆</span><b>18 hours</b>Maximum Allowed</div>
+                        <div class="box green"><span>🕒</span><b>10 hours</b>Remaining</div>
+                        <div class="box yellow"><span>✅</span><b>Within the limit</b>Status</div>
+                    </div>
+                </div>
+
+                <!-- Notifications and Status Alerts -->
+                <div class="panel">
+                    <h2>🔔 Notifications and Status Alerts</h2>
+                    <table class="alerts">
+                        <tr>
+                            <th>Date</th>
+                            <th>Course</th>
+                            <th>Status</th>
+                            <th>Message</th>
+                        </tr>
+                        <tr>
+                            <td>20 Nov 2026</td>
+                            <td>IS210</td>
+                            <td><span class="pill ok">Confirmed</span></td>
+                            <td>Your registration in Systems Analysis and Design was confirmed.</td>
+                        </tr>
+                        <tr>
+                            <td>19 Nov 2026</td>
+                            <td>CS301</td>
+                            <td><span class="pill wait">Waitlisted</span></td>
+                            <td>The course is full. You are number 5 on the waitlist.</td>
+                        </tr>
+                        <tr>
+                            <td>18 Nov 2026</td>
+                            <td>CS230</td>
+                            <td><span class="pill no">Rejected</span></td>
+                            <td>Schedule conflict with MATH201 (Mon/Wed 10:30 - 12:00).</td>
+                        </tr>
+                        <tr>
+                            <td>17 Nov 2026</td>
+                            <td>ENG101</td>
+                            <td><span class="pill ok">Confirmed</span></td>
+                            <td>Your registration in English Writing was confirmed.</td>
+                        </tr>
+                        <tr>
+                            <td>15 Nov 2026</td>
+                            <td>MATH201</td>
+                            <td><span class="pill ok">Confirmed</span></td>
+                            <td>Your registration in Discrete Mathematics was confirmed.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Right side -->
+            <div class="side">
+
+                <!-- Quick Actions -->
+                <div class="panel">
+                    <h2>⚡ Quick Actions</h2>
+                    <a class="action main-action" href="course-list.html">+ Register for Courses</a>
+                    <a class="action" href="my-schedule.html">📅 View My Schedule</a>
+                </div>
+
+                <!-- Upcoming Schedule -->
+                <div class="panel">
+                    <h2>📅 Upcoming Schedule</h2>
+                    <div class="item">
+                        <span class="day">Wed<br>25 Nov</span>
+                        <span><b>MATH201</b><br>10:30 AM - 12:00 PM</span>
+                    </div>
+                    <div class="item">
+                        <span class="day">Wed<br>25 Nov</span>
+                        <span><b>ENG101</b><br>1:00 PM - 3:00 PM</span>
+                    </div>
+                    <div class="item">
+                        <span class="day">Thu<br>26 Nov</span>
+                        <span><b>IS210</b><br>9:00 AM - 12:00 PM</span>
+                    </div>
+                </div>
+
+                <!-- Encouragement -->
+                <div class="panel keep">
+                    <b>⭐ Keep going, <span class="user-name">Student</span>!</b>
+                    <p>You're doing great! 💜</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

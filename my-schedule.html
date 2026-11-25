@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Schedule</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- Page card (white box in the middle) -->
+        <!-- Top bar (same on every page) -->
+        <div class="topbar">
+            <span class="brand">🎓 Course Registration</span>
+            <span class="menu">
+                <a href="student-dashboard.html">🏠 Dashboard</a>
+                <a href="course-list.html">📖 Courses</a>
+                <a href="my-schedule.html" class="active">📅 My Schedule</a>
+            </span>
+            <span class="user">👤 Hello, <span class="user-name">Student</span></span>
+        </div>
+
+        <table class="outer">
+            <tr>
+                <td class="page">
+
+                    <h2>My Schedule</h2>
+
+                    <!-- Registered Courses -->
+                    <h3>Registered Courses</h3>
+                    <table>
+                        <tr>
+                            <th>Code</th>
+                            <th>Course Name</th>
+                            <th>Credits</th>
+                            <th>Days and Time</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>MATH201</td>
+                            <td>Discrete Mathematics</td>
+                            <td>3</td>
+                            <td>Mon/Wed 10:30 - 12:00</td>
+                            <td class="good">Registered</td>
+                            <td>
+                                <form action="my-schedule.html" method="get">
+                                    <button type="submit">Drop</button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>IS210</td>
+                            <td>Systems Analysis and Design</td>
+                            <td>3</td>
+                            <td>Thu 09:00 - 12:00</td>
+                            <td class="good">Registered</td>
+                            <td>
+                                <form action="my-schedule.html" method="get">
+                                    <button type="submit">Drop</button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ENG101</td>
+                            <td>English Writing</td>
+                            <td>2</td>
+                            <td>Wed 13:00 - 15:00</td>
+                            <td class="good">Registered</td>
+                            <td>
+                                <form action="my-schedule.html" method="get">
+                                    <button type="submit">Drop</button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CS301</td>
+                            <td>Database Systems</td>
+                            <td>3</td>
+                            <td>Sun/Tue 12:00 - 13:30</td>
+                            <td class="bad">Waitlist (No. 5)</td>
+                            <td>
+                                <form action="my-schedule.html" method="get">
+                                    <button type="submit">Leave Waitlist</button>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!-- Weekly Schedule -->
+                    <h3>Weekly Schedule</h3>
+                    <table class="week">
+                        <tr>
+                            <th>Time</th>
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                        </tr>
+                        <tr>
+                            <td class="label">09:00 - 10:30</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td class="center" rowspan="2">IS210<br>Systems Analysis<br>09:00 - 12:00</td>
+                        </tr>
+                        <tr>
+                            <td class="label">10:30 - 12:00</td>
+                            <td>-</td>
+                            <td class="center">MATH201<br>Discrete Math</td>
+                            <td>-</td>
+                            <td class="center">MATH201<br>Discrete Math</td>
+                        </tr>
+                        <tr>
+                            <td class="label">12:00 - 13:30</td>
+                            <td class="center">CS301 (waitlist)</td>
+                            <td>-</td>
+                            <td class="center">CS301 (waitlist)</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td class="label">13:00 - 15:00</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td class="center">ENG101<br>English Writing</td>
+                            <td>-</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    <script src="script.js"></script>
+    </body>
+</html>
